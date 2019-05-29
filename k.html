@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>virtual-calculator</title>
+			<style type="text/css">
+				.button {
+						width:8%;
+						height:8%;
+						padding:6px;
+						margin:3px;
+						color:white;
+						font-size:20px;
+						background-color:#0003;
+						border-radius:6px;
+						border:1px solid black;
+						font-family:serif;
+						}
+				.button:hover{
+							color:red;
+							}
+				body{
+					margin:150px;
+					background-size:cover;
+					}
+				h5{
+					text-align:center;
+					font-family:serif;
+					font-weight:bold;	
+					font-size:25px;
+					color:white;
+					opacity:0.8;
+					}
+			 	input[type="text"]{
+								background-color:#0003;
+								color:white;	
+								height:30px;
+								border-radius:7px;
+								border: 1px solid black;
+								font-size:18px;
+								font-family:serif;
+								}
+		</style>
+	</head>
+	<body>
+		<body background="fog.jpg">
+		<h5>VIRTUAL &nbsp CALCULATOR</h5>
+		<center>
+			<form>
+				<input type="text" name="screen" id="screen" size="29.5%" onkeypress="return event.charCode>=150 && event.charCode<=12" />
+		<script type="text/javascript">
+			var screen=document.getElementById("screen");
+			function click()
+			{
+				alert("asdad");
+			}
+		</script>
+		</form>
+		<br />
+		<div>
+			<button class="button" onclick="screen.value=''">AC</button>
+			<button class="button" onclick="screen.value=screen.value.slice(0,screen.value.length-1)">Clear</button>
+			<button class="button" onclick="screen.value+='%'">%</button>
+			<button class="button" onclick="screen.value+='/'">/</button>
+		</div>
+			<button class="button" onclick="screen.value+='7'">7</button>
+			<button class="button" onclick="screen.value+='8'">8</button>
+			<button class="button" onclick="screen.value+='9'">9</button>
+			<button class="button" onclick="screen.value+='*'">*</button>
+		<div>
+			<button class="button" onclick="screen.value+='4'">4</button>
+			<button class="button" onclick="screen.value+='5'">5</button>
+			<button class="button" onclick="screen.value+='6'">6</button>
+			<button class="button" onclick="screen.value+='-'">-</button>
+		</div>
+		<div>
+			<button class="button" onclick="screen.value+='1'">1</button>
+			<button class="button" onclick="screen.value+='2'">2</button>
+			<button class="button" onclick="screen.value+='3'">3</button>
+			<button class="button" onclick="screen.value+='+'">+</button>
+		</div>
+		<div>
+			<button class="button" onclick="screen.value+='**'">^</button>
+			<button class="button" onclick="screen.value+='0'">0</button>
+			<button class="button" onclick="screen.value+='.'">.</button>
+			<button class="button" onclick="screen.value=eval(screen.value)">=</button>
+		</div>
+	</body>
+</html>
