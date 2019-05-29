@@ -1,3 +1,3 @@
 # Virtual Calculator
 
-#### use Firefox Web Browser
+#### Use Firefox Web Browser
